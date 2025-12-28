@@ -1354,9 +1354,9 @@ For questions or discussions about this implementation:
 
 
 
-\- GitHub: \[@Samhithaa07](#https://github.com/Samhithaa07)
+\- GitHub: @Samhithaa07(https://github.com/Samhithaa07)
 
-\- Email: [j.samhitha.k@gmail.com]
+\- Email: [j.samhitha.k@gmail.com](url)
 
 \- Project Documentation: See `docs/` directory
 
@@ -1373,6 +1373,7 @@ For questions or discussions about this implementation:
 
 
 **Documentation Version**: 1.0
+
 
 
 
