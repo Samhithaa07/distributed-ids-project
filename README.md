@@ -640,13 +640,13 @@ For detailed installation instructions, refer to `docs/SETUP.md`. The basic step
 
 ```bash
 
-\# Navigate to Kafka directory
+# Navigate to Kafka directory
 
 cd ~/kafka/kafka\_2.13-3.6.1
 
 
 
-\# Start Zookeeper
+# Start Zookeeper
 
 ./bin/zookeeper-server-start.sh -daemon config/zookeeper.properties
 
@@ -654,7 +654,7 @@ sleep 10
 
 
 
-\# Start Kafka
+# Start Kafka
 
 ./bin/kafka-server-start.sh -daemon config/server.properties
 
@@ -662,7 +662,7 @@ sleep 15
 
 
 
-\# Start Elasticsearch
+# Start Elasticsearch
 
 sudo systemctl start elasticsearch
 
@@ -670,7 +670,7 @@ sleep 30
 
 
 
-\# Start Logstash
+# Start Logstash
 
 sudo systemctl start logstash
 
@@ -678,7 +678,7 @@ sleep 20
 
 
 
-\# Start Kibana
+# Start Kibana
 
 sudo systemctl start kibana
 
@@ -694,13 +694,13 @@ sleep 30
 
 ```bash
 
-\# Execute startup script
+# Execute startup script
 
 ./start-sensors.sh
 
 
 
-\# Verify sensors running
+# Verify sensors running
 
 ps aux | grep snort
 
@@ -738,7 +738,7 @@ nmap -sS 192.168.20.10
 
 
 
-\# Service detection
+# Service detection
 
 nmap -sV -p 22,80,443 192.168.20.10
 
@@ -752,13 +752,13 @@ nmap -sV -p 22,80,443 192.168.20.10
 
 ```bash
 
-\# ICMP testing on host-only network
+# ICMP testing on host-only network
 
 ping -c 50 192.168.56.10
 
 
 
-\# Port scanning
+# Port scanning
 
 nmap -sS 192.168.56.10
 
@@ -918,9 +918,9 @@ The Kibana dashboard provides comprehensive visibility into detected threats thr
 
 &nbsp;  - Type: Horizontal bar chart
 
-&nbsp;  - Purpose: Most frequent alert categories
+&nbsp;  - Purpose: Most frequently observed packet sizes in captured traffic
 
-&nbsp;  - Insight: Identifies primary attack vectors
+&nbsp;  - Insight: Helps identify traffic patterns and anomalies such as scanning activity, ICMP floods, or protocol-specific behavior based on packet size characteristics
 
 
 
@@ -1006,11 +1006,11 @@ The complete dashboard configuration can be imported from `dashboards/exports/ex
 
 **Severity Classification**:
 
-\- Low Severity: 45% (primarily ICMP)
+\- Low Severity: 0% 
 
-\- Medium Severity: 40% (SSH, HTTP)
+\- Medium Severity: 100%
 
-\- High Severity: 15% (port scans)
+\- High Severity: 0%
 
 
 
@@ -1134,13 +1134,13 @@ The complete dashboard configuration can be imported from `dashboards/exports/ex
 
 ```bash
 
-\# Check Kafka is running
+# Check Kafka is running
 
 jps | grep Kafka
 
 
 
-\# Check firewall
+# Check firewall
 
 sudo ufw allow 9092
 
@@ -1152,13 +1152,13 @@ sudo ufw allow 9092
 
 ```bash
 
-\# Verify Elasticsearch has data
+# Verify Elasticsearch has data
 
 curl localhost:9200/snort-alerts-\*/\_count
 
 
 
-\# Check time range in Kibana
+# Check time range in Kibana
 
 ```
 
@@ -1168,13 +1168,13 @@ curl localhost:9200/snort-alerts-\*/\_count
 
 ```bash
 
-\# Enable promiscuous mode
+# Enable promiscuous mode
 
 sudo ip link set eth0 promisc on
 
 
 
-\# Generate traffic from different machine (not localhost)
+# Generate traffic from different machine (not localhost)
 
 ```
 
@@ -1373,6 +1373,7 @@ For questions or discussions about this implementation:
 
 
 **Documentation Version**: 1.0
+
 
 
 
