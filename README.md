@@ -16,41 +16,41 @@ A production-grade distributed intrusion detection system demonstrating real-tim
 
 
 
-- [Overview](#overview)
+- Overview
 
-- [Architecture](#architecture)
+- Architecture
 
-- [Features](#features)
+- Features
 
-- [System Requirements](#system-requirements)
+- System Requirements
 
-- [Technology Stack](#technology-stack)
+- Technology Stack
 
-- [Project Structure](#project-structure)
+- Project Structure
 
-- [Installation Guide](#installation-guide)
+- Installation Guide
 
-- [Configuration](#configuration)
+- Configuration
+  
+- Usage
 
-\- \[Usage](#usage)
+- Testing and Validation
 
-\- \[Testing and Validation](#testing-and-validation)
+- Dashboard and Visualization
 
-\- \[Dashboard and Visualization](#dashboard-and-visualization)
+- Results
 
-\- \[Results](#results)
+- Challenges and Solutions
 
-\- \[Challenges and Solutions](#challenges-and-solutions)
+- Troubleshooting
 
-\- \[Troubleshooting](#common-issues)
+- Future Enhancements
 
-\- \[Future Enhancements](#future-enhancements)
+- Contributing
 
-\- \[Contributing](#contributing)
+- License
 
-\- \[License](#license)
-
-\- \[Acknowledgments](#acknowledgments)
+- Acknowledgments
 
 
 
@@ -58,7 +58,7 @@ A production-grade distributed intrusion detection system demonstrating real-tim
 
 
 
-\## Overview
+## Overview
 
 
 
@@ -66,7 +66,7 @@ This project implements a distributed intrusion detection system capable of moni
 
 
 
-\### Key Innovation
+### Key Innovation
 
 
 
@@ -74,7 +74,7 @@ This implementation uses a hybrid architecture combining Windows Subsystem for L
 
 
 
-\### Use Cases
+### Use Cases
 
 
 
@@ -92,7 +92,7 @@ This implementation uses a hybrid architecture combining Windows Subsystem for L
 
 
 
-\## Architecture
+## Architecture
 
 
 
@@ -100,11 +100,11 @@ The system consists of three primary components distributed across WSL and two V
 
 
 
-\### Component Distribution
+### Component Distribution
 
 
 
-\*\*SIEM Server (WSL Ubuntu)\*\*
+**SIEM Server (WSL Ubuntu)**
 
 \- Apache Kafka: Message broker receiving alerts from sensors
 
@@ -116,7 +116,7 @@ The system consists of three primary components distributed across WSL and two V
 
 
 
-\*\*Sensor VM (Kali Linux)\*\*
+**Sensor VM (Kali Linux)**
 
 \- Snort Instance 1: Monitors host-only network segment (192.168.56.0/24)
 
@@ -126,7 +126,7 @@ The system consists of three primary components distributed across WSL and two V
 
 
 
-\*\*Traffic Generator VM (Kali Linux)\*\*
+**Traffic Generator VM (Kali Linux)**
 
 \- Dedicated system for generating test traffic
 
@@ -136,31 +136,29 @@ The system consists of three primary components distributed across WSL and two V
 
 
 
-\### Data Flow
+### Data Flow
 
 
 
 ```
 
-1\. Network Traffic → Snort Sensors
+1. Network Traffic → Snort Sensors
 
-2\. Snort Detection → JSON Alert Files
+2. Snort Detection → JSON Alert Files
 
-3\. Python Forwarders → Kafka Topic (snort-alerts)
+3. Python Forwarders → Kafka Topic (snort-alerts)
 
-4\. Kafka → Logstash Consumer
+4. Kafka → Logstash Consumer
 
-5\. Logstash Processing → Alert Enrichment
+5. Logstash Processing → Alert Enrichment
 
-6\. Enriched Data → Elasticsearch Indices
+6. Enriched Data → Elasticsearch Indices
 
-7\. Kibana Queries → Real-time Visualization
+7. Kibana Queries → Real-time Visualization
 
 ```
 
 In short,
-
-
 
 ```
 
@@ -198,7 +196,7 @@ Kibana Dashboards
 
 
 
-\*\*Architecture Diagram\*\*: See `docs/project-architecture-diagram.png`
+**Architecture Diagram**: See `docs/project-architecture-diagram.png`
 
 
 
@@ -206,29 +204,29 @@ Kibana Dashboards
 
 
 
-\## Features
+## Features
 
 
 
-\### Core Capabilities
+### Core Capabilities
 
 
 
-\- \*\*Multi-Segment Monitoring\*\*: Simultaneous monitoring of two distinct network segments
+- **Multi-Segment Monitoring**: Simultaneous monitoring of two distinct network segments
 
-\- \*\*Real-Time Processing\*\*: Sub-second alert processing and indexing
+- **Real-Time Processing**: Sub-second alert processing and indexing
 
-\- \*\*Scalable Architecture\*\*: Kafka-based design allows easy addition of sensors
+- **Scalable Architecture**: Kafka-based design allows easy addition of sensors
 
-\- \*\*Alert Enrichment\*\*: Automatic classification by severity, segment, and sensor
+- **Alert Enrichment**: Automatic classification by severity, segment, and sensor
 
-\- \*\*Comprehensive Visualization\*\*: Seven distinct dashboard visualizations
+- **Comprehensive Visualization**: Seven distinct dashboard visualizations
 
-\- \*\*Resource Efficient\*\*: Total system footprint of 4.5GB RAM
+- **Resource Efficient**: Total system footprint of 4.5GB RAM
 
 
 
-\### Detection Capabilities
+### Detection Capabilities
 
 
 
@@ -250,11 +248,11 @@ Kibana Dashboards
 
 
 
-\## System Requirements
+## System Requirements
 
 
 
-\### Hardware Requirements
+### Hardware Requirements
 
 
 
@@ -268,7 +266,7 @@ Kibana Dashboards
 
 
 
-\### Software Requirements
+### Software Requirements
 
 
 
@@ -288,15 +286,15 @@ Kibana Dashboards
 
 
 
-\## Technology Stack
+## Technology Stack
 
 
 
-\### Detection Layer
+### Detection Layer
 
 
 
-\- \*\*Snort 3.10.0.0\*\*: Open-source network intrusion detection system
+- **Snort 3.10.0.0**: Open-source network intrusion detection system
 
 &nbsp; - Signature-based detection engine
 
@@ -306,11 +304,11 @@ Kibana Dashboards
 
 
 
-\### Streaming Layer
+### Streaming Layer
 
 
 
-\- \*\*Apache Kafka 3.6.1\*\*: Distributed event streaming platform
+- **Apache Kafka 3.6.1**: Distributed event streaming platform
 
 &nbsp; - Topic-based message organization
 
@@ -322,11 +320,11 @@ Kibana Dashboards
 
 
 
-\### Processing Layer
+### Processing Layer
 
 
 
-\- \*\*Logstash 8.19.9\*\*: Server-side data processing pipeline
+- **Logstash 8.19.9**: Server-side data processing pipeline
 
 &nbsp; - Kafka input plugin
 
@@ -336,11 +334,11 @@ Kibana Dashboards
 
 
 
-\### Storage Layer
+### Storage Layer
 
 
 
-\- \*\*Elasticsearch 8.19.9\*\*: Distributed search and analytics engine
+- **Elasticsearch 8.19.9**: Distributed search and analytics engine
 
 &nbsp; - Daily index rotation
 
@@ -350,11 +348,11 @@ Kibana Dashboards
 
 
 
-\### Visualization Layer
+### Visualization Layer
 
 
 
-\- \*\*Kibana 8.19.9\*\*: Data visualization and exploration platform
+- **Kibana 8.19.9**: Data visualization and exploration platform
 
 &nbsp; - Interactive dashboards
 
@@ -364,11 +362,11 @@ Kibana Dashboards
 
 
 
-\### Integration Layer
+### Integration Layer
 
 
 
-\- \*\*Python 3.10.12\*\*: Custom alert forwarder implementation
+- **Python 3.10.12**: Custom alert forwarder implementation
 
 &nbsp; - kafka-python library
 
@@ -382,7 +380,7 @@ Kibana Dashboards
 
 
 
-\## Project Structure
+## Project Structure
 
 
 
@@ -472,11 +470,11 @@ distributed-ids-project/
 
 
 
-\## Installation Guide
+## Installation Guide
 
 
 
-\### Quick Start
+### Quick Start
 
 
 
@@ -484,7 +482,7 @@ For detailed installation instructions, refer to `docs/SETUP.md`. The basic step
 
 
 
-1\. \*\*Prepare WSL Environment\*\*
+1. **Prepare WSL Environment**
 
 &nbsp;  - Enable WSL2 on Windows
 
@@ -494,7 +492,7 @@ For detailed installation instructions, refer to `docs/SETUP.md`. The basic step
 
 
 
-2\. \*\*Install SIEM Components on WSL\*\*
+2. **Install SIEM Components on WSL**
 
 &nbsp;  - Install Java Development Kit
 
@@ -506,7 +504,7 @@ For detailed installation instructions, refer to `docs/SETUP.md`. The basic step
 
 
 
-3\. \*\*Create Virtual Machines\*\*
+3. **Create Virtual Machines**
 
 &nbsp;  - Install VirtualBox
 
@@ -516,7 +514,7 @@ For detailed installation instructions, refer to `docs/SETUP.md`. The basic step
 
 
 
-4\. \*\*Configure Snort Sensors\*\*
+4. **Configure Snort Sensors**
 
 &nbsp;  - Install Snort 3 on Sensor VM
 
@@ -528,7 +526,7 @@ For detailed installation instructions, refer to `docs/SETUP.md`. The basic step
 
 
 
-5\. \*\*Verify Installation\*\*
+5. **Verify Installation**
 
 &nbsp;  - Start all services in correct order
 
@@ -544,15 +542,15 @@ For detailed installation instructions, refer to `docs/SETUP.md`. The basic step
 
 
 
-\## Configuration
+## Configuration
 
 
 
-\### Network Configuration
+### Network Configuration
 
 
 
-\*\*WSL (SIEM Server)\*\*
+**WSL (SIEM Server)**
 
 \- IP Address: 172.28.254.81
 
@@ -564,7 +562,7 @@ For detailed installation instructions, refer to `docs/SETUP.md`. The basic step
 
 
 
-\*\*Sensor VM Network Interfaces\*\*
+**Sensor VM Network Interfaces**
 
 \- eth0 (Host-only): 192.168.56.10
 
@@ -574,17 +572,17 @@ For detailed installation instructions, refer to `docs/SETUP.md`. The basic step
 
 
 
-\*\*Traffic Generator VM\*\*
+**Traffic Generator VM**
 
 \- eth0 (Internal seg-b): 192.168.20.20
 
 
 
-\### Key Configuration Points
+### Key Configuration Points
 
 
 
-\*\*Snort Configuration\*\* (`configs/snort/snort.lua`)
+**Snort Configuration** (`configs/snort/snort.lua`)
 
 \- HOME\_NET: Defines protected networks
 
@@ -594,7 +592,7 @@ For detailed installation instructions, refer to `docs/SETUP.md`. The basic step
 
 
 
-\*\*Kafka Configuration\*\* (`configs/kafka/server.properties`)
+**Kafka Configuration** (`configs/kafka/server.properties`)
 
 \- advertised.listeners: Must match WSL IP address
 
@@ -604,7 +602,7 @@ For detailed installation instructions, refer to `docs/SETUP.md`. The basic step
 
 
 
-\*\*Logstash Pipeline\*\* (`configs/logstash/snort-pipeline.conf`)
+**Logstash Pipeline** (`configs/logstash/snort-pipeline.conf`)
 
 \- Input: Kafka consumer on snort-alerts topic
 
@@ -614,7 +612,7 @@ For detailed installation instructions, refer to `docs/SETUP.md`. The basic step
 
 
 
-\*\*Elasticsearch Configuration\*\* (`configs/elasticsearch/elasticsearch.yml`)
+**Elasticsearch Configuration** (`configs/elasticsearch/elasticsearch.yml`)
 
 \- Cluster name: snort-ids-cluster
 
@@ -628,15 +626,15 @@ For detailed installation instructions, refer to `docs/SETUP.md`. The basic step
 
 
 
-\## Usage
+## Usage
 
 
 
-\### Starting the System
+### Starting the System
 
 
 
-\*\*Step 1: Start SIEM Server (WSL)\*\*
+**Step 1: Start SIEM Server (WSL)**
 
 
 
@@ -1379,6 +1377,7 @@ For questions or discussions about this implementation:
 
 
 \*\*Documentation Version\*\*: 1.0
+
 
 
 
