@@ -688,7 +688,7 @@ sleep 30
 
 
 
-\*\*Step 2: Start Snort Sensors (Sensor VM)\*\*
+**Step 2: Start Snort Sensors (Sensor VM)**
 
 
 
@@ -708,7 +708,7 @@ ps aux | grep snort
 
 
 
-\*\*Step 3: Access Kibana Dashboard\*\*
+**Step 3: Access Kibana Dashboard**
 
 
 
@@ -716,11 +716,11 @@ Open web browser and navigate to: `http://localhost:5601`
 
 
 
-\### Generating Test Traffic
+### Generating Test Traffic
 
 
 
-\*\*From Traffic Generator VM:\*\*
+**From Traffic Generator VM:**
 
 
 
@@ -746,7 +746,7 @@ nmap -sV -p 22,80,443 192.168.20.10
 
 
 
-\*\*From WSL:\*\*
+**From WSL:**
 
 
 
@@ -766,11 +766,11 @@ nmap -sS 192.168.56.10
 
 
 
-\### Stopping the System
+### Stopping the System
 
 
 
-\*\*Stop Sensors (Sensor VM):\*\*
+**Stop Sensors (Sensor VM):**
 
 ```bash
 
@@ -782,7 +782,7 @@ sudo pkill -f snort\_to\_kafka
 
 
 
-\*\*Stop SIEM Services (WSL):\*\*
+**Stop SIEM Services (WSL):**
 
 ```bash
 
@@ -802,11 +802,11 @@ sudo systemctl stop kibana logstash elasticsearch
 
 
 
-\## Testing and Validation
+## Testing and Validation
 
 
 
-\### Pipeline Validation
+### Pipeline Validation
 
 
 
@@ -814,7 +814,7 @@ Each component of the data pipeline was independently validated:
 
 
 
-\*\*Stage 1: Snort Detection\*\*
+**Stage 1: Snort Detection**
 
 \- Verification: JSON alert files created in /var/log/snort/
 
@@ -824,7 +824,7 @@ Each component of the data pipeline was independently validated:
 
 
 
-\*\*Stage 2: Kafka Message Streaming\*\*
+**Stage 2: Kafka Message Streaming**
 
 \- Verification: Kafka console consumer displayed incoming alerts
 
@@ -834,7 +834,7 @@ Each component of the data pipeline was independently validated:
 
 
 
-\*\*Stage 3: Logstash Processing\*\*
+**Stage 3: Logstash Processing**
 
 \- Verification: Pipeline logs showed successful message processing
 
@@ -844,7 +844,7 @@ Each component of the data pipeline was independently validated:
 
 
 
-\*\*Stage 4: Elasticsearch Indexing\*\*
+**Stage 4: Elasticsearch Indexing**
 
 \- Verification: Indices created with correct naming convention
 
@@ -854,7 +854,7 @@ Each component of the data pipeline was independently validated:
 
 
 
-\*\*Stage 5: Kibana Visualization\*\*
+**Stage 5: Kibana Visualization**
 
 \- Verification: Dashboard displayed real-time data
 
@@ -864,17 +864,17 @@ Each component of the data pipeline was independently validated:
 
 
 
-\### Performance Testing
+### Performance Testing
 
 
 
-\- \*\*Alert Processing Latency\*\*: Average 450ms from detection to indexing
+- **Alert Processing Latency**: Average 450ms from detection to indexing
 
-\- \*\*System Resource Usage\*\*: 4.5GB RAM total across all components
+- **System Resource Usage**: 4.5GB RAM total across all components
 
-\- \*\*Alert Throughput\*\*: Sustained 100+ alerts per minute
+- **Alert Throughput**: Sustained 100+ alerts per minute
 
-\- \*\*Data Retention\*\*: Daily indices with configurable retention period
+- **Data Retention**: Daily indices with configurable retention period
 
 
 
@@ -882,7 +882,7 @@ Each component of the data pipeline was independently validated:
 
 
 
-\## Dashboard and Visualization
+## Dashboard and Visualization
 
 
 
@@ -890,11 +890,11 @@ The Kibana dashboard provides comprehensive visibility into detected threats thr
 
 
 
-\### Visualization Components
+### Visualization Components
 
 
 
-1\. \*\*Alert Timeline\*\*
+1. **Alert Timeline**
 
 &nbsp;  - Type: Line chart
 
@@ -904,7 +904,7 @@ The Kibana dashboard provides comprehensive visibility into detected threats thr
 
 
 
-2\. \*\*Network Segment Distribution\*\*
+2. **Network Segment Distribution**
 
 &nbsp;  - Type: Pie chart
 
@@ -914,7 +914,7 @@ The Kibana dashboard provides comprehensive visibility into detected threats thr
 
 
 
-3\. \*\*Top Alert Types\*\*
+3. **Top Packet Lengths**
 
 &nbsp;  - Type: Horizontal bar chart
 
@@ -924,7 +924,7 @@ The Kibana dashboard provides comprehensive visibility into detected threats thr
 
 
 
-4\. \*\*Source IP Analysis\*\*
+4. **Source IP Analysis**
 
 &nbsp;  - Type: Data table
 
@@ -934,9 +934,9 @@ The Kibana dashboard provides comprehensive visibility into detected threats thr
 
 
 
-5\. \*\*Severity Breakdown\*\*
+5. **Severity Breakdown**
 
-&nbsp;  - Type: Donut chart
+&nbsp;  - Type: Pie chart
 
 &nbsp;  - Purpose: Distribution by severity level (high/medium/low)
 
@@ -944,7 +944,7 @@ The Kibana dashboard provides comprehensive visibility into detected threats thr
 
 
 
-6\. \*\*Protocol Distribution\*\*
+6. **Protocol Distribution**
 
 &nbsp;  - Type: Pie chart
 
@@ -954,7 +954,7 @@ The Kibana dashboard provides comprehensive visibility into detected threats thr
 
 
 
-7\. \*\*Sensor Activity\*\*
+7. **Sensor Activity**
 
 &nbsp;  - Type: Bar chart
 
@@ -964,7 +964,7 @@ The Kibana dashboard provides comprehensive visibility into detected threats thr
 
 
 
-\### Dashboard Access
+### Dashboard Access
 
 
 
@@ -976,39 +976,35 @@ The complete dashboard configuration can be imported from `dashboards/exports/ex
 
 
 
-\## Results
+## Results
 
 
 
-\### Alert Statistics
+### Alert Statistics
 
 
 
-\*\*Total Alerts Generated\*\*: 150+
+**Total Alerts Generated**: ~1500
 
 
 
-\*\*Alert Type Distribution\*\*:
+**Alert Type Distribution**:
 
-\- ICMP Ping Detection: 45% (68 alerts)
+\- ICMP Ping Detection: 26.96% 
 
-\- TCP SYN Scan Detection: 30% (45 alerts)
-
-\- SSH Connection Attempts: 15% (23 alerts)
-
-\- HTTP Traffic Detection: 10% (14 alerts)
+\- TCP Detection: 73.04% 
 
 
 
-\*\*Network Segment Distribution\*\*:
+**Network Segment Distribution**:
 
-\- Host-only Network (eth0): 57% (85 alerts)
+\- Host-only Network (eth0): 95.87% 
 
-\- Internal seg-b Network (eth1): 43% (65 alerts)
+\- Internal seg-b Network (eth1): 4.13% 
 
 
 
-\*\*Severity Classification\*\*:
+**Severity Classification**:
 
 \- Low Severity: 45% (primarily ICMP)
 
@@ -1018,23 +1014,23 @@ The complete dashboard configuration can be imported from `dashboards/exports/ex
 
 
 
-\### Performance Metrics
+### Performance Metrics
 
 
 
-\- \*\*Average Processing Time\*\*: 450ms per alert
+\- **Average Processing Time**: 450ms per alert
 
-\- \*\*Kafka Message Lag\*\*: 0 messages (real-time processing)
+\- **Kafka Message Lag**: 0 messages (real-time processing)
 
-\- \*\*Elasticsearch Query Response\*\*: < 100ms average
+\- **Elasticsearch Query Response**: < 100ms average
 
-\- \*\*System Uptime\*\*: Stable over 4-day testing period
+\- **System Uptime**: Stable over 4-day testing period
 
-\- \*\*Memory Footprint\*\*: 4.5GB total (50% reduction vs traditional dual-VM approach)
+\- **Memory Footprint**: 4.5GB total (50% reduction vs traditional dual-VM approach)
 
 
 
-\### Resource Efficiency Comparison
+### Resource Efficiency Comparison
 
 
 
@@ -1042,7 +1038,7 @@ The complete dashboard configuration can be imported from `dashboards/exports/ex
 
 |--------------|-----------|------------|
 
-| Traditional (2 VMs) | ~10GB | Sensor VM + SIEM VM |
+| Traditional (2 VMs) | ~10GB | Sensor VM (8GB) + SIEM VM (2GB) |
 
 | This Implementation | ~4.5GB | WSL + Sensor VM + Generator VM |
 
@@ -1054,71 +1050,71 @@ The complete dashboard configuration can be imported from `dashboards/exports/ex
 
 
 
-\## Challenges and Solutions
+## Challenges and Solutions
 
 
 
-\### Challenge 1: WSL to Virtual Machine Connectivity
+### Challenge 1: WSL to Virtual Machine Connectivity
 
 
 
-\*\*Problem\*\*: Initial configuration had Kafka listening on localhost, preventing Kali VM from connecting.
+**Problem**: Initial configuration had Kafka listening on localhost, preventing Kali VM from connecting.
 
 
 
-\*\*Solution\*\*: Modified Kafka configuration to bind to 0.0.0.0 while advertising the specific WSL IP address (172.28.254.81). Added Windows Firewall rule to allow inbound connections on port 9092.
+**Solution**: Modified Kafka configuration to bind to 0.0.0.0 while advertising the specific WSL IP address (172.28.254.81). Added Windows Firewall rule to allow inbound connections on port 9092.
 
 
 
-\*\*Lesson Learned\*\*: WSL networking requires explicit IP binding and firewall configuration for cross-VM communication.
+**Lesson Learned**: WSL networking requires explicit IP binding and firewall configuration for cross-VM communication.
 
 
 
-\### Challenge 2: Localhost Traffic Not Visible to Snort
+### Challenge 2: Localhost Traffic Not Visible to Snort
 
 
 
-\*\*Problem\*\*: Pinging the VM's own IP address from within the same VM did not generate alerts because traffic remained in the kernel.
+**Problem**: Pinging the VM's own IP address from within the same VM did not generate alerts because traffic remained in the kernel.
 
 
 
-\*\*Solution\*\*: Implemented dedicated Traffic Generator VM to ensure packets traverse the actual network interface where Snort operates in promiscuous mode.
+**Solution**: Implemented dedicated Traffic Generator VM to ensure packets traverse the actual network interface where Snort operates in promiscuous mode.
 
 
 
-\*\*Lesson Learned\*\*: Network monitoring requires traffic to physically cross the monitored interface; simulated traffic must originate from external sources.
+**Lesson Learned**: Network monitoring requires traffic to physically cross the monitored interface; simulated traffic must originate from external sources.
 
 
 
-\### Challenge 3: Elasticsearch Memory Constraints
+### Challenge 3: Elasticsearch Memory Constraints
 
 
 
-\*\*Problem\*\*: Default Elasticsearch configuration consumed excessive memory on WSL, causing system instability.
+**Problem**: Default Elasticsearch configuration consumed excessive memory on WSL, causing system instability.
 
 
 
-\*\*Solution\*\*: Created custom JVM options file limiting heap size to 1GB. Configured Elasticsearch for single-node operation to eliminate cluster coordination overhead.
+**Solution**: Created custom JVM options file limiting heap size to 1GB. Configured Elasticsearch for single-node operation to eliminate cluster coordination overhead.
 
 
 
-\*\*Lesson Learned\*\*: Production defaults must be adjusted for resource-constrained demonstration environments.
+**Lesson Learned**: Production defaults must be adjusted for resource-constrained demonstration environments.
 
 
 
-\### Challenge 4: Snort Configuration Complexity
+### Challenge 4: Snort Configuration Complexity
 
 
 
-\*\*Problem\*\*: Snort 3's Lua-based configuration differed significantly from previous versions, and default configurations included numerous unnecessary modules.
+**Problem**: Snort 3's Lua-based configuration differed significantly from previous versions, and default configurations included numerous unnecessary modules.
 
 
 
-\*\*Solution\*\*: Started with distribution default configuration and selectively modified only essential parameters (HOME\_NET, alert output, rule inclusion). Disabled unused inspection modules.
+**Solution**: Started with distribution default configuration and selectively modified only essential parameters (HOME\_NET, alert output, rule inclusion). Disabled unused inspection modules.
 
 
 
-\*\*Lesson Learned\*\*: When learning new software versions, modify existing working configurations rather than creating from scratch.
+**Lesson Learned**: When learning new software versions, modify existing working configurations rather than creating from scratch.
 
 
 
@@ -1126,15 +1122,15 @@ The complete dashboard configuration can be imported from `dashboards/exports/ex
 
 
 
-\## Troubleshooting
+## Troubleshooting
 
 
 
-\### Common Issues
+### Common Issues
 
 
 
-\*\*1. Kafka Connection Refused\*\*
+**1. Kafka Connection Refused**
 
 ```bash
 
@@ -1152,7 +1148,7 @@ sudo ufw allow 9092
 
 
 
-\*\*2. No Data in Kibana\*\*
+**2. No Data in Kibana**
 
 ```bash
 
@@ -1168,7 +1164,7 @@ curl localhost:9200/snort-alerts-\*/\_count
 
 
 
-\*\*3. Snort Not Detecting Traffic\*\*
+**3. Snort Not Detecting Traffic**
 
 ```bash
 
@@ -1188,11 +1184,11 @@ sudo ip link set eth0 promisc on
 
 
 
-\## Future Enhancements
+## Future Enhancements
 
 
 
-\### Security Improvements
+### Security Improvements
 
 
 
@@ -1206,7 +1202,7 @@ sudo ip link set eth0 promisc on
 
 
 
-\### Scalability Enhancements
+### Scalability Enhancements
 
 
 
@@ -1220,7 +1216,7 @@ sudo ip link set eth0 promisc on
 
 
 
-\### Advanced Analytics
+### Advanced Analytics
 
 
 
@@ -1234,7 +1230,7 @@ sudo ip link set eth0 promisc on
 
 
 
-\### Operational Features
+### Operational Features
 
 
 
@@ -1248,7 +1244,7 @@ sudo ip link set eth0 promisc on
 
 
 
-\### Monitoring and Observability
+### Monitoring and Observability
 
 
 
@@ -1266,7 +1262,7 @@ sudo ip link set eth0 promisc on
 
 
 
-\## Contributing
+## Contributing
 
 
 
@@ -1276,13 +1272,13 @@ This project was developed as a cybersecurity internship demonstration project. 
 
 To propose changes:
 
-1\. Fork the repository
+1. Fork the repository
 
-2\. Create a feature branch
+2. Create a feature branch
 
-3\. Implement your changes with appropriate documentation
+3. Implement your changes with appropriate documentation
 
-4\. Submit a pull request with detailed description
+4. Submit a pull request with detailed description
 
 
 
@@ -1290,7 +1286,7 @@ To propose changes:
 
 
 
-\## License
+## License
 
 
 
@@ -1302,25 +1298,25 @@ This project is provided as-is for educational and demonstration purposes. Indiv
 
 
 
-\## Acknowledgments
+## Acknowledgments
 
 
 
-\### Open Source Projects
+### Open Source Projects
 
 
 
-\- \*\*Snort Project\*\*: For providing the industry-standard open-source IDS
+\- **Snort Project**: For providing the industry-standard open-source IDS
 
-\- \*\*Apache Software Foundation\*\*: For Apache Kafka
+\- **Apache Software Foundation**: For Apache Kafka
 
-\- \*\*Elastic\*\*: For the ELK Stack (Elasticsearch, Logstash, Kibana)
+\- **Elastic**: For the ELK Stack (Elasticsearch, Logstash, Kibana)
 
-\- \*\*Kali Linux Team\*\*: For comprehensive security testing distribution
+\- **Kali Linux Team**: For comprehensive security testing distribution
 
 
 
-\### Documentation and Resources
+### Documentation and Resources
 
 
 
@@ -1334,7 +1330,7 @@ This project is provided as-is for educational and demonstration purposes. Indiv
 
 
 
-\### Development Tools
+### Development Tools
 
 
 
@@ -1350,7 +1346,7 @@ This project is provided as-is for educational and demonstration purposes. Indiv
 
 
 
-\## Author
+## Author
 
 
 
@@ -1358,9 +1354,9 @@ For questions or discussions about this implementation:
 
 
 
-\- GitHub: \[@Samhithaa07](https://github.com/Samhithaa07)
+\- GitHub: \[@Samhithaa07](#https://github.com/Samhithaa07)
 
-\- Email: j.samhitha.k@gmail.com
+\- Email: [j.samhitha.k@gmail.com]
 
 \- Project Documentation: See `docs/` directory
 
@@ -1372,11 +1368,12 @@ For questions or discussions about this implementation:
 
 
 
-\*\*Project Completion Date\*\*: 28th December 2024
+**Project Completion Date**: 28th December 2024
 
 
 
-\*\*Documentation Version\*\*: 1.0
+**Documentation Version**: 1.0
+
 
 
 
