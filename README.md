@@ -1362,6 +1362,8 @@ For questions or discussions about this implementation:
 
 \- Technical Details: See `docs/ARCHITECTURE.md`
 
+\- Security Documentation: See `reports/post-implementation-security-report.pdf`
+
 
 
 ---
@@ -1373,6 +1375,7 @@ For questions or discussions about this implementation:
 
 
 **Documentation Version**: 1.0
+
 
 
 
