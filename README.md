@@ -1,6 +1,6 @@
-\# Distributed Intrusion Detection System
+# Distributed Intrusion Detection System
 
-\## Implementation using Snort, Apache Kafka, and ELK Stack
+## Implementation using Snort, Apache Kafka, and ELK Stack
 
 
 
@@ -12,25 +12,25 @@ A production-grade distributed intrusion detection system demonstrating real-tim
 
 
 
-\## Table of Contents
+## Table of Contents
 
 
 
-\- \[Overview](#overview)
+- [Overview](#overview)
 
-\- \[Architecture](#architecture)
+- [Architecture](#architecture)
 
-\- \[Features](#features)
+- [Features](#features)
 
-\- \[System Requirements](#system-requirements)
+- [System Requirements](#system-requirements)
 
-\- \[Technology Stack](#technology-stack)
+- [Technology Stack](#technology-stack)
 
-\- \[Project Structure](#project-structure)
+- [Project Structure](#project-structure)
 
-\- \[Installation Guide](#installation-guide)
+- [Installation Guide](#installation-guide)
 
-\- \[Configuration](#configuration)
+- [Configuration](#configuration)
 
 \- \[Usage](#usage)
 
@@ -1379,6 +1379,7 @@ For questions or discussions about this implementation:
 
 
 \*\*Documentation Version\*\*: 1.0
+
 
 
 
