@@ -1,0 +1,69 @@
+{
+  "took" : 12,
+  "timed_out" : false,
+  "_shards" : {
+    "total" : 1,
+    "successful" : 1,
+    "skipped" : 0,
+    "failed" : 0
+  },
+  "hits" : {
+    "total" : {
+      "value" : 1496,
+      "relation" : "eq"
+    },
+    "max_score" : null,
+    "hits" : [ ]
+  },
+  "aggregations" : {
+    "alerts_over_time" : {
+      "buckets" : [
+        {
+          "key_as_string" : "2025-12-27T13:00:00.000Z",
+          "key" : 1766840400000,
+          "doc_count" : 16
+        },
+        {
+          "key_as_string" : "2025-12-27T14:00:00.000Z",
+          "key" : 1766844000000,
+          "doc_count" : 0
+        },
+        {
+          "key_as_string" : "2025-12-27T15:00:00.000Z",
+          "key" : 1766847600000,
+          "doc_count" : 0
+        },
+        {
+          "key_as_string" : "2025-12-27T16:00:00.000Z",
+          "key" : 1766851200000,
+          "doc_count" : 0
+        },
+        {
+          "key_as_string" : "2025-12-27T17:00:00.000Z",
+          "key" : 1766854800000,
+          "doc_count" : 1122
+        },
+        {
+          "key_as_string" : "2025-12-27T18:00:00.000Z",
+          "key" : 1766858400000,
+          "doc_count" : 0
+        },
+        {
+          "key_as_string" : "2025-12-27T19:00:00.000Z",
+          "key" : 1766862000000,
+          "doc_count" : 228
+        },
+        {
+          "key_as_string" : "2025-12-27T20:00:00.000Z",
+          "key" : 1766865600000,
+          "doc_count" : 110
+        },
+        {
+          "key_as_string" : "2025-12-27T21:00:00.000Z",
+          "key" : 1766869200000,
+          "doc_count" : 20
+        }
+      ]
+    }
+  }
+}

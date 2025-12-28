@@ -1,0 +1,2 @@
+Topic: snort-alerts	TopicId: HLyj4SBWSzO3PCwY8c89SQ	PartitionCount: 1	ReplicationFactor: 1	Configs: 
+	Topic: snort-alerts	Partition: 0	Leader: 0	Replicas: 0	Isr: 0

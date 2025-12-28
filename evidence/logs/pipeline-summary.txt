@@ -1,0 +1,46 @@
+=== DISTRIBUTED IDS - PIPELINE SUMMARY ===
+Generated: Sun Dec 28 04:25:49 IST 2025
+
+ELASTICSEARCH STATUS:
+{
+  "cluster_name" : "snort-ids-cluster",
+  "status" : "yellow",
+  "timed_out" : false,
+  "number_of_nodes" : 1,
+  "number_of_data_nodes" : 1,
+  "active_primary_shards" : 38,
+  "active_shards" : 38,
+  "relocating_shards" : 0,
+  "initializing_shards" : 0,
+  "unassigned_shards" : 1,
+  "unassigned_primary_shards" : 0,
+  "delayed_unassigned_shards" : 0,
+  "number_of_pending_tasks" : 0,
+  "number_of_in_flight_fetch" : 0,
+  "task_max_waiting_in_queue_millis" : 0,
+  "active_shards_percent_as_number" : 97.43589743589743
+}
+
+INDICES:
+yellow open   snort-alerts-2025.12.27                                            hH228i1FQpmCmffgKTId6A   1   1       1496            0    554.5kb        554.5kb      554.5kb
+
+DOCUMENT COUNT:
+{
+  "count" : 1496,
+  "_shards" : {
+    "total" : 1,
+    "successful" : 1,
+    "skipped" : 0,
+    "failed" : 0
+  }
+}
+
+TOP 10 ALERT TYPES:
+
+
+NETWORK SEGMENT DISTRIBUTION:
+host-only-network: 1435 alerts
+seg-b: 61 alerts
+
+SEVERITY BREAKDOWN:
+medium: 1496 alerts

@@ -1,0 +1,1009 @@
+{
+  "took" : 7,
+  "timed_out" : false,
+  "_shards" : {
+    "total" : 1,
+    "successful" : 1,
+    "skipped" : 0,
+    "failed" : 0
+  },
+  "hits" : {
+    "total" : {
+      "value" : 1496,
+      "relation" : "eq"
+    },
+    "max_score" : 1.0,
+    "hits" : [
+      {
+        "_index" : "snort-alerts-2025.12.27",
+        "_id" : "HrynYZsBCQZQ-RwGztUz",
+        "_score" : 1.0,
+        "_ignored" : [
+          "event.original.keyword"
+        ],
+        "_source" : {
+          "timestamp" : "12/27-16:05:08.634431",
+          "pkt_len" : 84,
+          "sensor_hostname" : "kali",
+          "project" : "Distributed_IDS",
+          "action" : "allow",
+          "pkt_num" : 3,
+          "dir" : "S2C",
+          "pkt_gen" : "raw",
+          "sensor_interface" : "eth0",
+          "network_segment" : "host-only-network",
+          "src_ap" : "192.168.56.10:0",
+          "event" : {
+            "original" : "{\"timestamp\": \"12/27-16:05:08.634431\", \"pkt_num\": 3, \"proto\": \"ICMP\", \"pkt_gen\": \"raw\", \"pkt_len\": 84, \"dir\": \"S2C\", \"src_ap\": \"192.168.56.10:0\", \"dst_ap\": \"192.168.56.1:0\", \"rule\": \"1:1000001:1\", \"action\": \"allow\", \"sensor_id\": \"snort-sensor-01\", \"sensor_interface\": \"eth0\", \"network_segment\": \"host-only-network\", \"sensor_hostname\": \"kali\", \"ingestion_timestamp\": 1766869945.4069653}"
+          },
+          "pipeline_stage" : "logstash",
+          "rule" : "1:1000001:1",
+          "severity" : "medium",
+          "sensor_id" : "snort-sensor-01",
+          "dst_ap" : "192.168.56.1:0",
+          "@version" : "1",
+          "@timestamp" : "2025-12-27T21:12:25.517534310Z",
+          "proto" : "ICMP",
+          "ingestion_timestamp" : 1.7668699454069653E9
+        }
+      },
+      {
+        "_index" : "snort-alerts-2025.12.27",
+        "_id" : "KbynYZsBCQZQ-RwGztUz",
+        "_score" : 1.0,
+        "_ignored" : [
+          "event.original.keyword"
+        ],
+        "_source" : {
+          "timestamp" : "12/27-16:05:11.648336",
+          "pkt_len" : 84,
+          "sensor_hostname" : "kali",
+          "project" : "Distributed_IDS",
+          "action" : "allow",
+          "pkt_num" : 8,
+          "dir" : "C2S",
+          "pkt_gen" : "raw",
+          "sensor_interface" : "eth0",
+          "network_segment" : "host-only-network",
+          "src_ap" : "192.168.56.1:0",
+          "event" : {
+            "original" : "{\"timestamp\": \"12/27-16:05:11.648336\", \"pkt_num\": 8, \"proto\": \"ICMP\", \"pkt_gen\": \"raw\", \"pkt_len\": 84, \"dir\": \"C2S\", \"src_ap\": \"192.168.56.1:0\", \"dst_ap\": \"192.168.56.10:0\", \"rule\": \"1:1000001:1\", \"action\": \"allow\", \"sensor_id\": \"snort-sensor-01\", \"sensor_interface\": \"eth0\", \"network_segment\": \"host-only-network\", \"sensor_hostname\": \"kali\", \"ingestion_timestamp\": 1766869945.456134}"
+          },
+          "pipeline_stage" : "logstash",
+          "rule" : "1:1000001:1",
+          "severity" : "medium",
+          "sensor_id" : "snort-sensor-01",
+          "dst_ap" : "192.168.56.10:0",
+          "@version" : "1",
+          "@timestamp" : "2025-12-27T21:12:25.519881716Z",
+          "proto" : "ICMP",
+          "ingestion_timestamp" : 1.766869945456134E9
+        }
+      },
+      {
+        "_index" : "snort-alerts-2025.12.27",
+        "_id" : "IbynYZsBCQZQ-RwGztUz",
+        "_score" : 1.0,
+        "_ignored" : [
+          "event.original.keyword"
+        ],
+        "_source" : {
+          "timestamp" : "12/27-16:05:10.646685",
+          "pkt_len" : 84,
+          "sensor_hostname" : "kali",
+          "project" : "Distributed_IDS",
+          "action" : "allow",
+          "pkt_num" : 7,
+          "dir" : "S2C",
+          "pkt_gen" : "raw",
+          "sensor_interface" : "eth0",
+          "network_segment" : "host-only-network",
+          "src_ap" : "192.168.56.10:0",
+          "event" : {
+            "original" : "{\"timestamp\": \"12/27-16:05:10.646685\", \"pkt_num\": 7, \"proto\": \"ICMP\", \"pkt_gen\": \"raw\", \"pkt_len\": 84, \"dir\": \"S2C\", \"src_ap\": \"192.168.56.10:0\", \"dst_ap\": \"192.168.56.1:0\", \"rule\": \"1:1000001:1\", \"action\": \"allow\", \"sensor_id\": \"snort-sensor-01\", \"sensor_interface\": \"eth0\", \"network_segment\": \"host-only-network\", \"sensor_hostname\": \"kali\", \"ingestion_timestamp\": 1766869945.4486647}"
+          },
+          "pipeline_stage" : "logstash",
+          "rule" : "1:1000001:1",
+          "severity" : "medium",
+          "sensor_id" : "snort-sensor-01",
+          "dst_ap" : "192.168.56.1:0",
+          "@version" : "1",
+          "@timestamp" : "2025-12-27T21:12:25.519543790Z",
+          "proto" : "ICMP",
+          "ingestion_timestamp" : 1.7668699454486647E9
+        }
+      },
+      {
+        "_index" : "snort-alerts-2025.12.27",
+        "_id" : "L7ynYZsBCQZQ-RwGztU0",
+        "_score" : 1.0,
+        "_ignored" : [
+          "event.original.keyword"
+        ],
+        "_source" : {
+          "timestamp" : "12/27-16:05:13.655737",
+          "pkt_len" : 84,
+          "sensor_hostname" : "kali",
+          "project" : "Distributed_IDS",
+          "action" : "allow",
+          "pkt_num" : 15,
+          "dir" : "S2C",
+          "pkt_gen" : "raw",
+          "sensor_interface" : "eth0",
+          "network_segment" : "host-only-network",
+          "src_ap" : "192.168.56.10:0",
+          "event" : {
+            "original" : "{\"timestamp\": \"12/27-16:05:13.655737\", \"pkt_num\": 15, \"proto\": \"ICMP\", \"pkt_gen\": \"raw\", \"pkt_len\": 84, \"dir\": \"S2C\", \"src_ap\": \"192.168.56.10:0\", \"dst_ap\": \"192.168.56.1:0\", \"rule\": \"1:1000001:1\", \"action\": \"allow\", \"sensor_id\": \"snort-sensor-01\", \"sensor_interface\": \"eth0\", \"network_segment\": \"host-only-network\", \"sensor_hostname\": \"kali\", \"ingestion_timestamp\": 1766869945.4843583}"
+          },
+          "pipeline_stage" : "logstash",
+          "rule" : "1:1000001:1",
+          "severity" : "medium",
+          "sensor_id" : "snort-sensor-01",
+          "dst_ap" : "192.168.56.1:0",
+          "@version" : "1",
+          "@timestamp" : "2025-12-27T21:12:25.522714206Z",
+          "proto" : "ICMP",
+          "ingestion_timestamp" : 1.7668699454843583E9
+        }
+      },
+      {
+        "_index" : "snort-alerts-2025.12.27",
+        "_id" : "JLynYZsBCQZQ-RwGztUz",
+        "_score" : 1.0,
+        "_ignored" : [
+          "event.original.keyword"
+        ],
+        "_source" : {
+          "timestamp" : "12/27-16:05:14.657234",
+          "pkt_len" : 84,
+          "sensor_hostname" : "kali",
+          "project" : "Distributed_IDS",
+          "action" : "allow",
+          "pkt_num" : 19,
+          "dir" : "C2S",
+          "pkt_gen" : "raw",
+          "sensor_interface" : "eth0",
+          "network_segment" : "host-only-network",
+          "src_ap" : "192.168.56.1:0",
+          "event" : {
+            "original" : "{\"timestamp\": \"12/27-16:05:14.657234\", \"pkt_num\": 19, \"proto\": \"ICMP\", \"pkt_gen\": \"raw\", \"pkt_len\": 84, \"dir\": \"C2S\", \"src_ap\": \"192.168.56.1:0\", \"dst_ap\": \"192.168.56.10:0\", \"rule\": \"1:1000001:1\", \"action\": \"allow\", \"sensor_id\": \"snort-sensor-01\", \"sensor_interface\": \"eth0\", \"network_segment\": \"host-only-network\", \"sensor_hostname\": \"kali\", \"ingestion_timestamp\": 1766869945.4895985}"
+          },
+          "pipeline_stage" : "logstash",
+          "rule" : "1:1000001:1",
+          "severity" : "medium",
+          "sensor_id" : "snort-sensor-01",
+          "dst_ap" : "192.168.56.10:0",
+          "@version" : "1",
+          "@timestamp" : "2025-12-27T21:12:25.522852741Z",
+          "proto" : "ICMP",
+          "ingestion_timestamp" : 1.7668699454895985E9
+        }
+      },
+      {
+        "_index" : "snort-alerts-2025.12.27",
+        "_id" : "K7ynYZsBCQZQ-RwGztUz",
+        "_score" : 1.0,
+        "_ignored" : [
+          "event.original.keyword"
+        ],
+        "_source" : {
+          "timestamp" : "12/27-16:05:15.672730",
+          "pkt_len" : 84,
+          "sensor_hostname" : "kali",
+          "project" : "Distributed_IDS",
+          "action" : "allow",
+          "pkt_num" : 21,
+          "dir" : "C2S",
+          "pkt_gen" : "raw",
+          "sensor_interface" : "eth0",
+          "network_segment" : "host-only-network",
+          "src_ap" : "192.168.56.1:0",
+          "event" : {
+            "original" : "{\"timestamp\": \"12/27-16:05:15.672730\", \"pkt_num\": 21, \"proto\": \"ICMP\", \"pkt_gen\": \"raw\", \"pkt_len\": 84, \"dir\": \"C2S\", \"src_ap\": \"192.168.56.1:0\", \"dst_ap\": \"192.168.56.10:0\", \"rule\": \"1:1000001:1\", \"action\": \"allow\", \"sensor_id\": \"snort-sensor-01\", \"sensor_interface\": \"eth0\", \"network_segment\": \"host-only-network\", \"sensor_hostname\": \"kali\", \"ingestion_timestamp\": 1766869945.49852}"
+          },
+          "pipeline_stage" : "logstash",
+          "rule" : "1:1000001:1",
+          "severity" : "medium",
+          "sensor_id" : "snort-sensor-01",
+          "dst_ap" : "192.168.56.10:0",
+          "@version" : "1",
+          "@timestamp" : "2025-12-27T21:12:25.523123410Z",
+          "proto" : "ICMP",
+          "ingestion_timestamp" : 1.76686994549852E9
+        }
+      },
+      {
+        "_index" : "snort-alerts-2025.12.27",
+        "_id" : "J7ynYZsBCQZQ-RwGztUz",
+        "_score" : 1.0,
+        "_ignored" : [
+          "event.original.keyword"
+        ],
+        "_source" : {
+          "timestamp" : "12/27-16:05:16.674572",
+          "pkt_len" : 84,
+          "sensor_hostname" : "kali",
+          "project" : "Distributed_IDS",
+          "action" : "allow",
+          "pkt_num" : 24,
+          "dir" : "S2C",
+          "pkt_gen" : "raw",
+          "sensor_interface" : "eth0",
+          "network_segment" : "host-only-network",
+          "src_ap" : "192.168.56.10:0",
+          "event" : {
+            "original" : "{\"timestamp\": \"12/27-16:05:16.674572\", \"pkt_num\": 24, \"proto\": \"ICMP\", \"pkt_gen\": \"raw\", \"pkt_len\": 84, \"dir\": \"S2C\", \"src_ap\": \"192.168.56.10:0\", \"dst_ap\": \"192.168.56.1:0\", \"rule\": \"1:1000001:1\", \"action\": \"allow\", \"sensor_id\": \"snort-sensor-01\", \"sensor_interface\": \"eth0\", \"network_segment\": \"host-only-network\", \"sensor_hostname\": \"kali\", \"ingestion_timestamp\": 1766869945.5121434}"
+          },
+          "pipeline_stage" : "logstash",
+          "rule" : "1:1000001:1",
+          "severity" : "medium",
+          "sensor_id" : "snort-sensor-01",
+          "dst_ap" : "192.168.56.1:0",
+          "@version" : "1",
+          "@timestamp" : "2025-12-27T21:12:25.523498479Z",
+          "proto" : "ICMP",
+          "ingestion_timestamp" : 1.7668699455121434E9
+        }
+      },
+      {
+        "_index" : "snort-alerts-2025.12.27",
+        "_id" : "MbynYZsBCQZQ-RwGztU0",
+        "_score" : 1.0,
+        "_ignored" : [
+          "event.original.keyword"
+        ],
+        "_source" : {
+          "timestamp" : "12/27-16:05:17.676446",
+          "pkt_len" : 84,
+          "sensor_hostname" : "kali",
+          "project" : "Distributed_IDS",
+          "action" : "allow",
+          "pkt_num" : 26,
+          "dir" : "S2C",
+          "pkt_gen" : "raw",
+          "sensor_interface" : "eth0",
+          "network_segment" : "host-only-network",
+          "src_ap" : "192.168.56.10:0",
+          "event" : {
+            "original" : "{\"timestamp\": \"12/27-16:05:17.676446\", \"pkt_num\": 26, \"proto\": \"ICMP\", \"pkt_gen\": \"raw\", \"pkt_len\": 84, \"dir\": \"S2C\", \"src_ap\": \"192.168.56.10:0\", \"dst_ap\": \"192.168.56.1:0\", \"rule\": \"1:1000001:1\", \"action\": \"allow\", \"sensor_id\": \"snort-sensor-01\", \"sensor_interface\": \"eth0\", \"network_segment\": \"host-only-network\", \"sensor_hostname\": \"kali\", \"ingestion_timestamp\": 1766869945.519372}"
+          },
+          "pipeline_stage" : "logstash",
+          "rule" : "1:1000001:1",
+          "severity" : "medium",
+          "sensor_id" : "snort-sensor-01",
+          "dst_ap" : "192.168.56.1:0",
+          "@version" : "1",
+          "@timestamp" : "2025-12-27T21:12:25.524199276Z",
+          "proto" : "ICMP",
+          "ingestion_timestamp" : 1.766869945519372E9
+        }
+      },
+      {
+        "_index" : "snort-alerts-2025.12.27",
+        "_id" : "KLynYZsBCQZQ-RwGztUz",
+        "_score" : 1.0,
+        "_ignored" : [
+          "event.original.keyword"
+        ],
+        "_source" : {
+          "timestamp" : "12/27-16:05:09.636396",
+          "pkt_len" : 84,
+          "sensor_hostname" : "kali",
+          "project" : "Distributed_IDS",
+          "action" : "allow",
+          "pkt_num" : 4,
+          "dir" : "C2S",
+          "pkt_gen" : "raw",
+          "sensor_interface" : "eth0",
+          "network_segment" : "host-only-network",
+          "src_ap" : "192.168.56.1:0",
+          "event" : {
+            "original" : "{\"timestamp\": \"12/27-16:05:09.636396\", \"pkt_num\": 4, \"proto\": \"ICMP\", \"pkt_gen\": \"raw\", \"pkt_len\": 84, \"dir\": \"C2S\", \"src_ap\": \"192.168.56.1:0\", \"dst_ap\": \"192.168.56.10:0\", \"rule\": \"1:1000001:1\", \"action\": \"allow\", \"sensor_id\": \"snort-sensor-01\", \"sensor_interface\": \"eth0\", \"network_segment\": \"host-only-network\", \"sensor_hostname\": \"kali\", \"ingestion_timestamp\": 1766869945.431305}"
+          },
+          "pipeline_stage" : "logstash",
+          "rule" : "1:1000001:1",
+          "severity" : "medium",
+          "sensor_id" : "snort-sensor-01",
+          "dst_ap" : "192.168.56.10:0",
+          "@version" : "1",
+          "@timestamp" : "2025-12-27T21:12:25.518094017Z",
+          "proto" : "ICMP",
+          "ingestion_timestamp" : 1.766869945431305E9
+        }
+      },
+      {
+        "_index" : "snort-alerts-2025.12.27",
+        "_id" : "I7ynYZsBCQZQ-RwGztUz",
+        "_score" : 1.0,
+        "_ignored" : [
+          "event.original.keyword"
+        ],
+        "_source" : {
+          "timestamp" : "12/27-16:05:12.649991",
+          "pkt_len" : 84,
+          "sensor_hostname" : "kali",
+          "project" : "Distributed_IDS",
+          "action" : "allow",
+          "pkt_num" : 11,
+          "dir" : "S2C",
+          "pkt_gen" : "raw",
+          "sensor_interface" : "eth0",
+          "network_segment" : "host-only-network",
+          "src_ap" : "192.168.56.10:0",
+          "event" : {
+            "original" : "{\"timestamp\": \"12/27-16:05:12.649991\", \"pkt_num\": 11, \"proto\": \"ICMP\", \"pkt_gen\": \"raw\", \"pkt_len\": 84, \"dir\": \"S2C\", \"src_ap\": \"192.168.56.10:0\", \"dst_ap\": \"192.168.56.1:0\", \"rule\": \"1:1000001:1\", \"action\": \"allow\", \"sensor_id\": \"snort-sensor-01\", \"sensor_interface\": \"eth0\", \"network_segment\": \"host-only-network\", \"sensor_hostname\": \"kali\", \"ingestion_timestamp\": 1766869945.4756935}"
+          },
+          "pipeline_stage" : "logstash",
+          "rule" : "1:1000001:1",
+          "severity" : "medium",
+          "sensor_id" : "snort-sensor-01",
+          "dst_ap" : "192.168.56.1:0",
+          "@version" : "1",
+          "@timestamp" : "2025-12-27T21:12:25.522437845Z",
+          "proto" : "ICMP",
+          "ingestion_timestamp" : 1.7668699454756935E9
+        }
+      },
+      {
+        "_index" : "snort-alerts-2025.12.27",
+        "_id" : "JbynYZsBCQZQ-RwGztUz",
+        "_score" : 1.0,
+        "_ignored" : [
+          "event.original.keyword"
+        ],
+        "_source" : {
+          "timestamp" : "12/27-16:05:14.657289",
+          "pkt_len" : 84,
+          "sensor_hostname" : "kali",
+          "project" : "Distributed_IDS",
+          "action" : "allow",
+          "pkt_num" : 20,
+          "dir" : "S2C",
+          "pkt_gen" : "raw",
+          "sensor_interface" : "eth0",
+          "network_segment" : "host-only-network",
+          "src_ap" : "192.168.56.10:0",
+          "event" : {
+            "original" : "{\"timestamp\": \"12/27-16:05:14.657289\", \"pkt_num\": 20, \"proto\": \"ICMP\", \"pkt_gen\": \"raw\", \"pkt_len\": 84, \"dir\": \"S2C\", \"src_ap\": \"192.168.56.10:0\", \"dst_ap\": \"192.168.56.1:0\", \"rule\": \"1:1000001:1\", \"action\": \"allow\", \"sensor_id\": \"snort-sensor-01\", \"sensor_interface\": \"eth0\", \"network_segment\": \"host-only-network\", \"sensor_hostname\": \"kali\", \"ingestion_timestamp\": 1766869945.4944003}"
+          },
+          "pipeline_stage" : "logstash",
+          "rule" : "1:1000001:1",
+          "severity" : "medium",
+          "sensor_id" : "snort-sensor-01",
+          "dst_ap" : "192.168.56.1:0",
+          "@version" : "1",
+          "@timestamp" : "2025-12-27T21:12:25.523010276Z",
+          "proto" : "ICMP",
+          "ingestion_timestamp" : 1.7668699454944003E9
+        }
+      },
+      {
+        "_index" : "snort-alerts-2025.12.27",
+        "_id" : "JrynYZsBCQZQ-RwGztUz",
+        "_score" : 1.0,
+        "_ignored" : [
+          "event.original.keyword"
+        ],
+        "_source" : {
+          "timestamp" : "12/27-16:05:16.674550",
+          "pkt_len" : 84,
+          "sensor_hostname" : "kali",
+          "project" : "Distributed_IDS",
+          "action" : "allow",
+          "pkt_num" : 23,
+          "dir" : "C2S",
+          "pkt_gen" : "raw",
+          "sensor_interface" : "eth0",
+          "network_segment" : "host-only-network",
+          "src_ap" : "192.168.56.1:0",
+          "event" : {
+            "original" : "{\"timestamp\": \"12/27-16:05:16.674550\", \"pkt_num\": 23, \"proto\": \"ICMP\", \"pkt_gen\": \"raw\", \"pkt_len\": 84, \"dir\": \"C2S\", \"src_ap\": \"192.168.56.1:0\", \"dst_ap\": \"192.168.56.10:0\", \"rule\": \"1:1000001:1\", \"action\": \"allow\", \"sensor_id\": \"snort-sensor-01\", \"sensor_interface\": \"eth0\", \"network_segment\": \"host-only-network\", \"sensor_hostname\": \"kali\", \"ingestion_timestamp\": 1766869945.506415}"
+          },
+          "pipeline_stage" : "logstash",
+          "rule" : "1:1000001:1",
+          "severity" : "medium",
+          "sensor_id" : "snort-sensor-01",
+          "dst_ap" : "192.168.56.10:0",
+          "@version" : "1",
+          "@timestamp" : "2025-12-27T21:12:25.523377431Z",
+          "proto" : "ICMP",
+          "ingestion_timestamp" : 1.766869945506415E9
+        }
+      },
+      {
+        "_index" : "snort-alerts-2025.12.27",
+        "_id" : "LLynYZsBCQZQ-RwGztUz",
+        "_score" : 1.0,
+        "_ignored" : [
+          "event.original.keyword"
+        ],
+        "_source" : {
+          "timestamp" : "12/27-16:05:17.676374",
+          "pkt_len" : 84,
+          "sensor_hostname" : "kali",
+          "project" : "Distributed_IDS",
+          "action" : "allow",
+          "pkt_num" : 25,
+          "dir" : "C2S",
+          "pkt_gen" : "raw",
+          "sensor_interface" : "eth0",
+          "network_segment" : "host-only-network",
+          "src_ap" : "192.168.56.1:0",
+          "event" : {
+            "original" : "{\"timestamp\": \"12/27-16:05:17.676374\", \"pkt_num\": 25, \"proto\": \"ICMP\", \"pkt_gen\": \"raw\", \"pkt_len\": 84, \"dir\": \"C2S\", \"src_ap\": \"192.168.56.1:0\", \"dst_ap\": \"192.168.56.10:0\", \"rule\": \"1:1000001:1\", \"action\": \"allow\", \"sensor_id\": \"snort-sensor-01\", \"sensor_interface\": \"eth0\", \"network_segment\": \"host-only-network\", \"sensor_hostname\": \"kali\", \"ingestion_timestamp\": 1766869945.516557}"
+          },
+          "pipeline_stage" : "logstash",
+          "rule" : "1:1000001:1",
+          "severity" : "medium",
+          "sensor_id" : "snort-sensor-01",
+          "dst_ap" : "192.168.56.10:0",
+          "@version" : "1",
+          "@timestamp" : "2025-12-27T21:12:25.523645535Z",
+          "proto" : "ICMP",
+          "ingestion_timestamp" : 1.766869945516557E9
+        }
+      },
+      {
+        "_index" : "snort-alerts-2025.12.27",
+        "_id" : "LbynYZsBCQZQ-RwGztU0",
+        "_score" : 1.0,
+        "_ignored" : [
+          "event.original.keyword"
+        ],
+        "_source" : {
+          "timestamp" : "12/27-16:05:09.636417",
+          "pkt_len" : 84,
+          "sensor_hostname" : "kali",
+          "project" : "Distributed_IDS",
+          "action" : "allow",
+          "pkt_num" : 5,
+          "dir" : "S2C",
+          "pkt_gen" : "raw",
+          "sensor_interface" : "eth0",
+          "network_segment" : "host-only-network",
+          "src_ap" : "192.168.56.10:0",
+          "event" : {
+            "original" : "{\"timestamp\": \"12/27-16:05:09.636417\", \"pkt_num\": 5, \"proto\": \"ICMP\", \"pkt_gen\": \"raw\", \"pkt_len\": 84, \"dir\": \"S2C\", \"src_ap\": \"192.168.56.10:0\", \"dst_ap\": \"192.168.56.1:0\", \"rule\": \"1:1000001:1\", \"action\": \"allow\", \"sensor_id\": \"snort-sensor-01\", \"sensor_interface\": \"eth0\", \"network_segment\": \"host-only-network\", \"sensor_hostname\": \"kali\", \"ingestion_timestamp\": 1766869945.434366}"
+          },
+          "pipeline_stage" : "logstash",
+          "rule" : "1:1000001:1",
+          "severity" : "medium",
+          "sensor_id" : "snort-sensor-01",
+          "dst_ap" : "192.168.56.1:0",
+          "@version" : "1",
+          "@timestamp" : "2025-12-27T21:12:25.518451700Z",
+          "proto" : "ICMP",
+          "ingestion_timestamp" : 1.766869945434366E9
+        }
+      },
+      {
+        "_index" : "snort-alerts-2025.12.27",
+        "_id" : "ILynYZsBCQZQ-RwGztUz",
+        "_score" : 1.0,
+        "_ignored" : [
+          "event.original.keyword"
+        ],
+        "_source" : {
+          "timestamp" : "12/27-16:05:10.646647",
+          "pkt_len" : 84,
+          "sensor_hostname" : "kali",
+          "project" : "Distributed_IDS",
+          "action" : "allow",
+          "pkt_num" : 6,
+          "dir" : "C2S",
+          "pkt_gen" : "raw",
+          "sensor_interface" : "eth0",
+          "network_segment" : "host-only-network",
+          "src_ap" : "192.168.56.1:0",
+          "event" : {
+            "original" : "{\"timestamp\": \"12/27-16:05:10.646647\", \"pkt_num\": 6, \"proto\": \"ICMP\", \"pkt_gen\": \"raw\", \"pkt_len\": 84, \"dir\": \"C2S\", \"src_ap\": \"192.168.56.1:0\", \"dst_ap\": \"192.168.56.10:0\", \"rule\": \"1:1000001:1\", \"action\": \"allow\", \"sensor_id\": \"snort-sensor-01\", \"sensor_interface\": \"eth0\", \"network_segment\": \"host-only-network\", \"sensor_hostname\": \"kali\", \"ingestion_timestamp\": 1766869945.4383864}"
+          },
+          "pipeline_stage" : "logstash",
+          "rule" : "1:1000001:1",
+          "severity" : "medium",
+          "sensor_id" : "snort-sensor-01",
+          "dst_ap" : "192.168.56.10:0",
+          "@version" : "1",
+          "@timestamp" : "2025-12-27T21:12:25.519000169Z",
+          "proto" : "ICMP",
+          "ingestion_timestamp" : 1.7668699454383864E9
+        }
+      },
+      {
+        "_index" : "snort-alerts-2025.12.27",
+        "_id" : "IrynYZsBCQZQ-RwGztUz",
+        "_score" : 1.0,
+        "_ignored" : [
+          "event.original.keyword"
+        ],
+        "_source" : {
+          "timestamp" : "12/27-16:05:12.649960",
+          "pkt_len" : 84,
+          "sensor_hostname" : "kali",
+          "project" : "Distributed_IDS",
+          "action" : "allow",
+          "pkt_num" : 10,
+          "dir" : "C2S",
+          "pkt_gen" : "raw",
+          "sensor_interface" : "eth0",
+          "network_segment" : "host-only-network",
+          "src_ap" : "192.168.56.1:0",
+          "event" : {
+            "original" : "{\"timestamp\": \"12/27-16:05:12.649960\", \"pkt_num\": 10, \"proto\": \"ICMP\", \"pkt_gen\": \"raw\", \"pkt_len\": 84, \"dir\": \"C2S\", \"src_ap\": \"192.168.56.1:0\", \"dst_ap\": \"192.168.56.10:0\", \"rule\": \"1:1000001:1\", \"action\": \"allow\", \"sensor_id\": \"snort-sensor-01\", \"sensor_interface\": \"eth0\", \"network_segment\": \"host-only-network\", \"sensor_hostname\": \"kali\", \"ingestion_timestamp\": 1766869945.4712741}"
+          },
+          "pipeline_stage" : "logstash",
+          "rule" : "1:1000001:1",
+          "severity" : "medium",
+          "sensor_id" : "snort-sensor-01",
+          "dst_ap" : "192.168.56.10:0",
+          "@version" : "1",
+          "@timestamp" : "2025-12-27T21:12:25.522227030Z",
+          "proto" : "ICMP",
+          "ingestion_timestamp" : 1.7668699454712741E9
+        }
+      },
+      {
+        "_index" : "snort-alerts-2025.12.27",
+        "_id" : "MLynYZsBCQZQ-RwGztU0",
+        "_score" : 1.0,
+        "_ignored" : [
+          "event.original.keyword"
+        ],
+        "_source" : {
+          "timestamp" : "12/27-16:05:15.672764",
+          "pkt_len" : 84,
+          "sensor_hostname" : "kali",
+          "project" : "Distributed_IDS",
+          "action" : "allow",
+          "pkt_num" : 22,
+          "dir" : "S2C",
+          "pkt_gen" : "raw",
+          "sensor_interface" : "eth0",
+          "network_segment" : "host-only-network",
+          "src_ap" : "192.168.56.10:0",
+          "event" : {
+            "original" : "{\"timestamp\": \"12/27-16:05:15.672764\", \"pkt_num\": 22, \"proto\": \"ICMP\", \"pkt_gen\": \"raw\", \"pkt_len\": 84, \"dir\": \"S2C\", \"src_ap\": \"192.168.56.10:0\", \"dst_ap\": \"192.168.56.1:0\", \"rule\": \"1:1000001:1\", \"action\": \"allow\", \"sensor_id\": \"snort-sensor-01\", \"sensor_interface\": \"eth0\", \"network_segment\": \"host-only-network\", \"sensor_hostname\": \"kali\", \"ingestion_timestamp\": 1766869945.5026476}"
+          },
+          "pipeline_stage" : "logstash",
+          "rule" : "1:1000001:1",
+          "severity" : "medium",
+          "sensor_id" : "snort-sensor-01",
+          "dst_ap" : "192.168.56.1:0",
+          "@version" : "1",
+          "@timestamp" : "2025-12-27T21:12:25.523244597Z",
+          "proto" : "ICMP",
+          "ingestion_timestamp" : 1.7668699455026476E9
+        }
+      },
+      {
+        "_index" : "snort-alerts-2025.12.27",
+        "_id" : "H7ynYZsBCQZQ-RwGztUz",
+        "_score" : 1.0,
+        "_ignored" : [
+          "event.original.keyword"
+        ],
+        "_source" : {
+          "timestamp" : "12/27-16:05:08.634388",
+          "pkt_len" : 84,
+          "sensor_hostname" : "kali",
+          "project" : "Distributed_IDS",
+          "action" : "allow",
+          "pkt_num" : 2,
+          "dir" : "C2S",
+          "pkt_gen" : "raw",
+          "sensor_interface" : "eth0",
+          "network_segment" : "host-only-network",
+          "src_ap" : "192.168.56.1:0",
+          "event" : {
+            "original" : "{\"timestamp\": \"12/27-16:05:08.634388\", \"pkt_num\": 2, \"proto\": \"ICMP\", \"pkt_gen\": \"raw\", \"pkt_len\": 84, \"dir\": \"C2S\", \"src_ap\": \"192.168.56.1:0\", \"dst_ap\": \"192.168.56.10:0\", \"rule\": \"1:1000001:1\", \"action\": \"allow\", \"sensor_id\": \"snort-sensor-01\", \"sensor_interface\": \"eth0\", \"network_segment\": \"host-only-network\", \"sensor_hostname\": \"kali\", \"ingestion_timestamp\": 1766869945.3779314}"
+          },
+          "pipeline_stage" : "logstash",
+          "rule" : "1:1000001:1",
+          "severity" : "medium",
+          "sensor_id" : "snort-sensor-01",
+          "dst_ap" : "192.168.56.10:0",
+          "@version" : "1",
+          "@timestamp" : "2025-12-27T21:12:25.500457620Z",
+          "proto" : "ICMP",
+          "ingestion_timestamp" : 1.7668699453779314E9
+        }
+      },
+      {
+        "_index" : "snort-alerts-2025.12.27",
+        "_id" : "LrynYZsBCQZQ-RwGztU0",
+        "_score" : 1.0,
+        "_ignored" : [
+          "event.original.keyword"
+        ],
+        "_source" : {
+          "timestamp" : "12/27-16:05:11.648357",
+          "pkt_len" : 84,
+          "sensor_hostname" : "kali",
+          "project" : "Distributed_IDS",
+          "action" : "allow",
+          "pkt_num" : 9,
+          "dir" : "S2C",
+          "pkt_gen" : "raw",
+          "sensor_interface" : "eth0",
+          "network_segment" : "host-only-network",
+          "src_ap" : "192.168.56.10:0",
+          "event" : {
+            "original" : "{\"timestamp\": \"12/27-16:05:11.648357\", \"pkt_num\": 9, \"proto\": \"ICMP\", \"pkt_gen\": \"raw\", \"pkt_len\": 84, \"dir\": \"S2C\", \"src_ap\": \"192.168.56.10:0\", \"dst_ap\": \"192.168.56.1:0\", \"rule\": \"1:1000001:1\", \"action\": \"allow\", \"sensor_id\": \"snort-sensor-01\", \"sensor_interface\": \"eth0\", \"network_segment\": \"host-only-network\", \"sensor_hostname\": \"kali\", \"ingestion_timestamp\": 1766869945.467601}"
+          },
+          "pipeline_stage" : "logstash",
+          "rule" : "1:1000001:1",
+          "severity" : "medium",
+          "sensor_id" : "snort-sensor-01",
+          "dst_ap" : "192.168.56.1:0",
+          "@version" : "1",
+          "@timestamp" : "2025-12-27T21:12:25.521767144Z",
+          "proto" : "ICMP",
+          "ingestion_timestamp" : 1.766869945467601E9
+        }
+      },
+      {
+        "_index" : "snort-alerts-2025.12.27",
+        "_id" : "KrynYZsBCQZQ-RwGztUz",
+        "_score" : 1.0,
+        "_ignored" : [
+          "event.original.keyword"
+        ],
+        "_source" : {
+          "timestamp" : "12/27-16:05:13.655641",
+          "pkt_len" : 84,
+          "sensor_hostname" : "kali",
+          "project" : "Distributed_IDS",
+          "action" : "allow",
+          "pkt_num" : 14,
+          "dir" : "C2S",
+          "pkt_gen" : "raw",
+          "sensor_interface" : "eth0",
+          "network_segment" : "host-only-network",
+          "src_ap" : "192.168.56.1:0",
+          "event" : {
+            "original" : "{\"timestamp\": \"12/27-16:05:13.655641\", \"pkt_num\": 14, \"proto\": \"ICMP\", \"pkt_gen\": \"raw\", \"pkt_len\": 84, \"dir\": \"C2S\", \"src_ap\": \"192.168.56.1:0\", \"dst_ap\": \"192.168.56.10:0\", \"rule\": \"1:1000001:1\", \"action\": \"allow\", \"sensor_id\": \"snort-sensor-01\", \"sensor_interface\": \"eth0\", \"network_segment\": \"host-only-network\", \"sensor_hostname\": \"kali\", \"ingestion_timestamp\": 1766869945.4808218}"
+          },
+          "pipeline_stage" : "logstash",
+          "rule" : "1:1000001:1",
+          "severity" : "medium",
+          "sensor_id" : "snort-sensor-01",
+          "dst_ap" : "192.168.56.10:0",
+          "@version" : "1",
+          "@timestamp" : "2025-12-27T21:12:25.522583564Z",
+          "proto" : "ICMP",
+          "ingestion_timestamp" : 1.7668699454808218E9
+        }
+      },
+      {
+        "_index" : "snort-alerts-2025.12.27",
+        "_id" : "HLxzYZsBCQZQ-RwGmNUC",
+        "_score" : 1.0,
+        "_ignored" : [
+          "event.original.keyword"
+        ],
+        "_source" : {
+          "timestamp" : "12/27-15:06:48.058085",
+          "pkt_len" : 84,
+          "sensor_hostname" : "kali",
+          "project" : "Distributed_IDS",
+          "action" : "allow",
+          "pkt_num" : 131,
+          "dir" : "S2C",
+          "pkt_gen" : "raw",
+          "sensor_interface" : "eth0",
+          "network_segment" : "host-only-network",
+          "src_ap" : "192.168.56.10:0",
+          "event" : {
+            "original" : "{\"timestamp\": \"12/27-15:06:48.058085\", \"pkt_num\": 131, \"proto\": \"ICMP\", \"pkt_gen\": \"raw\", \"pkt_len\": 84, \"dir\": \"S2C\", \"src_ap\": \"192.168.56.10:0\", \"dst_ap\": \"192.168.56.1:0\", \"rule\": \"1:1000001:1\", \"action\": \"allow\", \"sensor_id\": \"snort-sensor-01\", \"sensor_interface\": \"eth0\", \"network_segment\": \"host-only-network\", \"sensor_hostname\": \"kali\", \"ingestion_timestamp\": 1766866523.334888}"
+          },
+          "pipeline_stage" : "logstash",
+          "rule" : "1:1000001:1",
+          "severity" : "medium",
+          "sensor_id" : "snort-sensor-01",
+          "dst_ap" : "192.168.56.1:0",
+          "@version" : "1",
+          "@timestamp" : "2025-12-27T20:15:24.033674972Z",
+          "proto" : "ICMP",
+          "ingestion_timestamp" : 1.766866523334888E9
+        }
+      },
+      {
+        "_index" : "snort-alerts-2025.12.27",
+        "_id" : "HbxzYZsBCQZQ-RwGmNUN",
+        "_score" : 1.0,
+        "_ignored" : [
+          "event.original.keyword"
+        ],
+        "_source" : {
+          "timestamp" : "12/27-15:06:48.057974",
+          "pkt_len" : 84,
+          "sensor_hostname" : "kali",
+          "project" : "Distributed_IDS",
+          "action" : "allow",
+          "pkt_num" : 130,
+          "dir" : "C2S",
+          "pkt_gen" : "raw",
+          "sensor_interface" : "eth0",
+          "network_segment" : "host-only-network",
+          "src_ap" : "192.168.56.1:0",
+          "event" : {
+            "original" : "{\"timestamp\": \"12/27-15:06:48.057974\", \"pkt_num\": 130, \"proto\": \"ICMP\", \"pkt_gen\": \"raw\", \"pkt_len\": 84, \"dir\": \"C2S\", \"src_ap\": \"192.168.56.1:0\", \"dst_ap\": \"192.168.56.10:0\", \"rule\": \"1:1000001:1\", \"action\": \"allow\", \"sensor_id\": \"snort-sensor-01\", \"sensor_interface\": \"eth0\", \"network_segment\": \"host-only-network\", \"sensor_hostname\": \"kali\", \"ingestion_timestamp\": 1766866523.329749}"
+          },
+          "pipeline_stage" : "logstash",
+          "rule" : "1:1000001:1",
+          "severity" : "medium",
+          "sensor_id" : "snort-sensor-01",
+          "dst_ap" : "192.168.56.10:0",
+          "@version" : "1",
+          "@timestamp" : "2025-12-27T20:15:24.031521906Z",
+          "proto" : "ICMP",
+          "ingestion_timestamp" : 1.766866523329749E9
+        }
+      },
+      {
+        "_index" : "snort-alerts-2025.12.27",
+        "_id" : "4LxrYZsBCQZQ-RwGudRX",
+        "_score" : 1.0,
+        "_ignored" : [
+          "event.original.keyword"
+        ],
+        "_source" : {
+          "timestamp" : "12/27-15:06:17.769174",
+          "pkt_len" : 84,
+          "sensor_hostname" : "kali",
+          "project" : "Distributed_IDS",
+          "action" : "allow",
+          "pkt_num" : 65,
+          "dir" : "C2S",
+          "pkt_gen" : "raw",
+          "sensor_interface" : "eth0",
+          "network_segment" : "host-only-network",
+          "src_ap" : "192.168.56.1:0",
+          "event" : {
+            "original" : "{\"timestamp\": \"12/27-15:06:17.769174\", \"pkt_num\": 65, \"proto\": \"ICMP\", \"pkt_gen\": \"raw\", \"pkt_len\": 84, \"dir\": \"C2S\", \"src_ap\": \"192.168.56.1:0\", \"dst_ap\": \"192.168.56.10:0\", \"rule\": \"1:1000001:1\", \"action\": \"allow\", \"sensor_id\": \"snort-sensor-01\", \"sensor_interface\": \"eth0\", \"network_segment\": \"host-only-network\", \"sensor_hostname\": \"kali\", \"ingestion_timestamp\": 1766866007.0627406}"
+          },
+          "pipeline_stage" : "logstash",
+          "rule" : "1:1000001:1",
+          "severity" : "medium",
+          "sensor_id" : "snort-sensor-01",
+          "dst_ap" : "192.168.56.10:0",
+          "@version" : "1",
+          "@timestamp" : "2025-12-27T20:06:48.004074601Z",
+          "proto" : "ICMP",
+          "ingestion_timestamp" : 1.7668660070627406E9
+        }
+      },
+      {
+        "_index" : "snort-alerts-2025.12.27",
+        "_id" : "4bxrYZsBCQZQ-RwGudRX",
+        "_score" : 1.0,
+        "_ignored" : [
+          "event.original.keyword"
+        ],
+        "_source" : {
+          "timestamp" : "12/27-15:06:19.770345",
+          "pkt_len" : 84,
+          "sensor_hostname" : "kali",
+          "project" : "Distributed_IDS",
+          "action" : "allow",
+          "pkt_num" : 69,
+          "dir" : "C2S",
+          "pkt_gen" : "raw",
+          "sensor_interface" : "eth0",
+          "network_segment" : "host-only-network",
+          "src_ap" : "192.168.56.1:0",
+          "event" : {
+            "original" : "{\"timestamp\": \"12/27-15:06:19.770345\", \"pkt_num\": 69, \"proto\": \"ICMP\", \"pkt_gen\": \"raw\", \"pkt_len\": 84, \"dir\": \"C2S\", \"src_ap\": \"192.168.56.1:0\", \"dst_ap\": \"192.168.56.10:0\", \"rule\": \"1:1000001:1\", \"action\": \"allow\", \"sensor_id\": \"snort-sensor-01\", \"sensor_interface\": \"eth0\", \"network_segment\": \"host-only-network\", \"sensor_hostname\": \"kali\", \"ingestion_timestamp\": 1766866007.0783935}"
+          },
+          "pipeline_stage" : "logstash",
+          "rule" : "1:1000001:1",
+          "severity" : "medium",
+          "sensor_id" : "snort-sensor-01",
+          "dst_ap" : "192.168.56.10:0",
+          "@version" : "1",
+          "@timestamp" : "2025-12-27T20:06:48.018496849Z",
+          "proto" : "ICMP",
+          "ingestion_timestamp" : 1.7668660070783935E9
+        }
+      },
+      {
+        "_index" : "snort-alerts-2025.12.27",
+        "_id" : "4rxrYZsBCQZQ-RwGudRX",
+        "_score" : 1.0,
+        "_ignored" : [
+          "event.original.keyword"
+        ],
+        "_source" : {
+          "timestamp" : "12/27-15:06:21.776431",
+          "pkt_len" : 84,
+          "sensor_hostname" : "kali",
+          "project" : "Distributed_IDS",
+          "action" : "allow",
+          "pkt_num" : 75,
+          "dir" : "C2S",
+          "pkt_gen" : "raw",
+          "sensor_interface" : "eth0",
+          "network_segment" : "host-only-network",
+          "src_ap" : "192.168.56.1:0",
+          "event" : {
+            "original" : "{\"timestamp\": \"12/27-15:06:21.776431\", \"pkt_num\": 75, \"proto\": \"ICMP\", \"pkt_gen\": \"raw\", \"pkt_len\": 84, \"dir\": \"C2S\", \"src_ap\": \"192.168.56.1:0\", \"dst_ap\": \"192.168.56.10:0\", \"rule\": \"1:1000001:1\", \"action\": \"allow\", \"sensor_id\": \"snort-sensor-01\", \"sensor_interface\": \"eth0\", \"network_segment\": \"host-only-network\", \"sensor_hostname\": \"kali\", \"ingestion_timestamp\": 1766866007.0906186}"
+          },
+          "pipeline_stage" : "logstash",
+          "rule" : "1:1000001:1",
+          "severity" : "medium",
+          "sensor_id" : "snort-sensor-01",
+          "dst_ap" : "192.168.56.10:0",
+          "@version" : "1",
+          "@timestamp" : "2025-12-27T20:06:48.029238489Z",
+          "proto" : "ICMP",
+          "ingestion_timestamp" : 1.7668660070906186E9
+        }
+      },
+      {
+        "_index" : "snort-alerts-2025.12.27",
+        "_id" : "47xrYZsBCQZQ-RwGudRX",
+        "_score" : 1.0,
+        "_ignored" : [
+          "event.original.keyword"
+        ],
+        "_source" : {
+          "timestamp" : "12/27-15:06:23.816647",
+          "pkt_len" : 84,
+          "sensor_hostname" : "kali",
+          "project" : "Distributed_IDS",
+          "action" : "allow",
+          "pkt_num" : 80,
+          "dir" : "C2S",
+          "pkt_gen" : "raw",
+          "sensor_interface" : "eth0",
+          "network_segment" : "host-only-network",
+          "src_ap" : "192.168.56.1:0",
+          "event" : {
+            "original" : "{\"timestamp\": \"12/27-15:06:23.816647\", \"pkt_num\": 80, \"proto\": \"ICMP\", \"pkt_gen\": \"raw\", \"pkt_len\": 84, \"dir\": \"C2S\", \"src_ap\": \"192.168.56.1:0\", \"dst_ap\": \"192.168.56.10:0\", \"rule\": \"1:1000001:1\", \"action\": \"allow\", \"sensor_id\": \"snort-sensor-01\", \"sensor_interface\": \"eth0\", \"network_segment\": \"host-only-network\", \"sensor_hostname\": \"kali\", \"ingestion_timestamp\": 1766866007.1046133}"
+          },
+          "pipeline_stage" : "logstash",
+          "rule" : "1:1000001:1",
+          "severity" : "medium",
+          "sensor_id" : "snort-sensor-01",
+          "dst_ap" : "192.168.56.10:0",
+          "@version" : "1",
+          "@timestamp" : "2025-12-27T20:06:48.043769279Z",
+          "proto" : "ICMP",
+          "ingestion_timestamp" : 1.7668660071046133E9
+        }
+      },
+      {
+        "_index" : "snort-alerts-2025.12.27",
+        "_id" : "5LxrYZsBCQZQ-RwGudRX",
+        "_score" : 1.0,
+        "_ignored" : [
+          "event.original.keyword"
+        ],
+        "_source" : {
+          "timestamp" : "12/27-15:06:25.838000",
+          "pkt_len" : 84,
+          "sensor_hostname" : "kali",
+          "project" : "Distributed_IDS",
+          "action" : "allow",
+          "pkt_num" : 84,
+          "dir" : "C2S",
+          "pkt_gen" : "raw",
+          "sensor_interface" : "eth0",
+          "network_segment" : "host-only-network",
+          "src_ap" : "192.168.56.1:0",
+          "event" : {
+            "original" : "{\"timestamp\": \"12/27-15:06:25.838000\", \"pkt_num\": 84, \"proto\": \"ICMP\", \"pkt_gen\": \"raw\", \"pkt_len\": 84, \"dir\": \"C2S\", \"src_ap\": \"192.168.56.1:0\", \"dst_ap\": \"192.168.56.10:0\", \"rule\": \"1:1000001:1\", \"action\": \"allow\", \"sensor_id\": \"snort-sensor-01\", \"sensor_interface\": \"eth0\", \"network_segment\": \"host-only-network\", \"sensor_hostname\": \"kali\", \"ingestion_timestamp\": 1766866007.1198237}"
+          },
+          "pipeline_stage" : "logstash",
+          "rule" : "1:1000001:1",
+          "severity" : "medium",
+          "sensor_id" : "snort-sensor-01",
+          "dst_ap" : "192.168.56.10:0",
+          "@version" : "1",
+          "@timestamp" : "2025-12-27T20:06:48.059797642Z",
+          "proto" : "ICMP",
+          "ingestion_timestamp" : 1.7668660071198237E9
+        }
+      },
+      {
+        "_index" : "snort-alerts-2025.12.27",
+        "_id" : "5bxrYZsBCQZQ-RwGudRX",
+        "_score" : 1.0,
+        "_ignored" : [
+          "event.original.keyword"
+        ],
+        "_source" : {
+          "timestamp" : "12/27-15:06:27.876267",
+          "pkt_len" : 84,
+          "sensor_hostname" : "kali",
+          "project" : "Distributed_IDS",
+          "action" : "allow",
+          "pkt_num" : 88,
+          "dir" : "C2S",
+          "pkt_gen" : "raw",
+          "sensor_interface" : "eth0",
+          "network_segment" : "host-only-network",
+          "src_ap" : "192.168.56.1:0",
+          "event" : {
+            "original" : "{\"timestamp\": \"12/27-15:06:27.876267\", \"pkt_num\": 88, \"proto\": \"ICMP\", \"pkt_gen\": \"raw\", \"pkt_len\": 84, \"dir\": \"C2S\", \"src_ap\": \"192.168.56.1:0\", \"dst_ap\": \"192.168.56.10:0\", \"rule\": \"1:1000001:1\", \"action\": \"allow\", \"sensor_id\": \"snort-sensor-01\", \"sensor_interface\": \"eth0\", \"network_segment\": \"host-only-network\", \"sensor_hostname\": \"kali\", \"ingestion_timestamp\": 1766866007.1356125}"
+          },
+          "pipeline_stage" : "logstash",
+          "rule" : "1:1000001:1",
+          "severity" : "medium",
+          "sensor_id" : "snort-sensor-01",
+          "dst_ap" : "192.168.56.10:0",
+          "@version" : "1",
+          "@timestamp" : "2025-12-27T20:06:48.075088887Z",
+          "proto" : "ICMP",
+          "ingestion_timestamp" : 1.7668660071356125E9
+        }
+      },
+      {
+        "_index" : "snort-alerts-2025.12.27",
+        "_id" : "5rxrYZsBCQZQ-RwGudRX",
+        "_score" : 1.0,
+        "_ignored" : [
+          "event.original.keyword"
+        ],
+        "_source" : {
+          "timestamp" : "12/27-15:06:29.890920",
+          "pkt_len" : 84,
+          "sensor_hostname" : "kali",
+          "project" : "Distributed_IDS",
+          "action" : "allow",
+          "pkt_num" : 94,
+          "dir" : "C2S",
+          "pkt_gen" : "raw",
+          "sensor_interface" : "eth0",
+          "network_segment" : "host-only-network",
+          "src_ap" : "192.168.56.1:0",
+          "event" : {
+            "original" : "{\"timestamp\": \"12/27-15:06:29.890920\", \"pkt_num\": 94, \"proto\": \"ICMP\", \"pkt_gen\": \"raw\", \"pkt_len\": 84, \"dir\": \"C2S\", \"src_ap\": \"192.168.56.1:0\", \"dst_ap\": \"192.168.56.10:0\", \"rule\": \"1:1000001:1\", \"action\": \"allow\", \"sensor_id\": \"snort-sensor-01\", \"sensor_interface\": \"eth0\", \"network_segment\": \"host-only-network\", \"sensor_hostname\": \"kali\", \"ingestion_timestamp\": 1766866007.151709}"
+          },
+          "pipeline_stage" : "logstash",
+          "rule" : "1:1000001:1",
+          "severity" : "medium",
+          "sensor_id" : "snort-sensor-01",
+          "dst_ap" : "192.168.56.10:0",
+          "@version" : "1",
+          "@timestamp" : "2025-12-27T20:06:48.090701300Z",
+          "proto" : "ICMP",
+          "ingestion_timestamp" : 1.766866007151709E9
+        }
+      },
+      {
+        "_index" : "snort-alerts-2025.12.27",
+        "_id" : "57xrYZsBCQZQ-RwGudRX",
+        "_score" : 1.0,
+        "_ignored" : [
+          "event.original.keyword"
+        ],
+        "_source" : {
+          "timestamp" : "12/27-15:06:31.906078",
+          "pkt_len" : 84,
+          "sensor_hostname" : "kali",
+          "project" : "Distributed_IDS",
+          "action" : "allow",
+          "pkt_num" : 98,
+          "dir" : "C2S",
+          "pkt_gen" : "raw",
+          "sensor_interface" : "eth0",
+          "network_segment" : "host-only-network",
+          "src_ap" : "192.168.56.1:0",
+          "event" : {
+            "original" : "{\"timestamp\": \"12/27-15:06:31.906078\", \"pkt_num\": 98, \"proto\": \"ICMP\", \"pkt_gen\": \"raw\", \"pkt_len\": 84, \"dir\": \"C2S\", \"src_ap\": \"192.168.56.1:0\", \"dst_ap\": \"192.168.56.10:0\", \"rule\": \"1:1000001:1\", \"action\": \"allow\", \"sensor_id\": \"snort-sensor-01\", \"sensor_interface\": \"eth0\", \"network_segment\": \"host-only-network\", \"sensor_hostname\": \"kali\", \"ingestion_timestamp\": 1766866007.1656265}"
+          },
+          "pipeline_stage" : "logstash",
+          "rule" : "1:1000001:1",
+          "severity" : "medium",
+          "sensor_id" : "snort-sensor-01",
+          "dst_ap" : "192.168.56.10:0",
+          "@version" : "1",
+          "@timestamp" : "2025-12-27T20:06:48.105779002Z",
+          "proto" : "ICMP",
+          "ingestion_timestamp" : 1.7668660071656265E9
+        }
+      }
+    ]
+  }
+}

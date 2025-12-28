@@ -1,0 +1,77 @@
+{
+  "took" : 6,
+  "timed_out" : false,
+  "_shards" : {
+    "total" : 1,
+    "successful" : 1,
+    "skipped" : 0,
+    "failed" : 0
+  },
+  "hits" : {
+    "total" : {
+      "value" : 1496,
+      "relation" : "eq"
+    },
+    "max_score" : null,
+    "hits" : [ ]
+  },
+  "aggregations" : {
+    "by_message" : {
+      "doc_count_error_upper_bound" : 0,
+      "sum_other_doc_count" : 0,
+      "buckets" : [ ]
+    },
+    "by_severity" : {
+      "doc_count_error_upper_bound" : 0,
+      "sum_other_doc_count" : 0,
+      "buckets" : [
+        {
+          "key" : "medium",
+          "doc_count" : 1496
+        }
+      ]
+    },
+    "by_segment" : {
+      "doc_count_error_upper_bound" : 0,
+      "sum_other_doc_count" : 0,
+      "buckets" : [
+        {
+          "key" : "host-only-network",
+          "doc_count" : 1435
+        },
+        {
+          "key" : "seg-b",
+          "doc_count" : 61
+        }
+      ]
+    },
+    "by_sensor" : {
+      "doc_count_error_upper_bound" : 0,
+      "sum_other_doc_count" : 0,
+      "buckets" : [
+        {
+          "key" : "snort-sensor-01",
+          "doc_count" : 1435
+        },
+        {
+          "key" : "snort-sensor-02",
+          "doc_count" : 61
+        }
+      ]
+    },
+    "by_protocol" : {
+      "doc_count_error_upper_bound" : 0,
+      "sum_other_doc_count" : 0,
+      "buckets" : [
+        {
+          "key" : "TCP",
+          "doc_count" : 1078
+        },
+        {
+          "key" : "ICMP",
+          "doc_count" : 418
+        }
+      ]
+    }
+  }
+}
