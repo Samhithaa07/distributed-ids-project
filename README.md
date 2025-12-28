@@ -726,13 +726,13 @@ Open web browser and navigate to: `http://localhost:5601`
 
 ```bash
 
-\# ICMP testing
+# ICMP testing
 
 ping -c 50 192.168.20.10
 
 
 
-\# Port scanning
+# Port scanning
 
 nmap -sS 192.168.20.10
 
@@ -1373,6 +1373,7 @@ For questions or discussions about this implementation:
 
 
 **Documentation Version**: 1.0
+
 
 
 
