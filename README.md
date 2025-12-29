@@ -393,7 +393,7 @@ distributed-ids-project/
 │   ├── kafka-topic-info.txt
 │   └── sample-alerts.json
 ├── reports/
-│   ├── post-implementation-security-report.pdf 
+│   └── post-implementation-security-report.pdf 
 ├── screenshots/              # Documentation and validation screenshots
 ├── scripts/
 │   ├── snort\_to\_kafka.py     # Alert forwarder for eth0
@@ -1313,6 +1313,7 @@ For questions or discussions about this implementation:
 
 
 **Documentation Version**: 1.0
+
 
 
 
